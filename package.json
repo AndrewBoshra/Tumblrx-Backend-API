@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon server",
-    "start:prod": "node server",
+    "start:prod": "node server & node socketserver/socket.js",
     "gen:docs": "npm run gen:docsme & npm run gen:fdocshtml",
     "gen:docsme": "jsdoc2md *.js */*.js controllers/*/*.js    > README.md",
     "gen:fdocshtml": "jsdoc -c jsdoc.json ./",
